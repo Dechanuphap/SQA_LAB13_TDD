@@ -27,6 +27,7 @@ public class FizzBuzzTest {
     @CsvFileSource(files = "src/test/resources/DataTest.csv")
     public void testResult(Integer input, String expectedResault){
         IFizzBuzz fizzBuzz = new FizzBuzz();
+        
         fizzBuzz.ShowResult(input);
         String actualResault = outContent.toString();
 
