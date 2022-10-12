@@ -8,16 +8,16 @@ public class FizzBuzz implements IFizzBuzz{
 	public void ShowResult(int Number) {
 		if(Number >= 1 && Number <= 100) {
 			if(Number % 3 == 0 && Number % 5 != 0) {
-				System.out.println("Fizz");
+				System.out.print("Fizz");
 			}else if(Number % 5 == 0 && Number % 3 != 0) {
-				System.out.println("Buzz");
+				System.out.print("Buzz");
 			}else if(Number % 3 == 0 && Number % 5 == 0) {
-				System.out.println("FizzBuzz");
+				System.out.print("FizzBuzz");
 			}else {
-				System.out.println(Number);
+				System.out.print(Number);
 			}
 		}else {
-			System.out.println("Please enter the integer number range 1-100!");
+			System.out.print("Please enter the integer number range 1-100!");
 		}
 	}
 }
